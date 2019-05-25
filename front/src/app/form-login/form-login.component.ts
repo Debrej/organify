@@ -86,7 +86,6 @@ export class FormLoginComponent implements OnInit {
 
   @HostListener('window:keyup', ['$event'])
   keyEvent(event: KeyboardEvent) {
-    console.log(event.key);
     // @ts-ignore
     if(event.key == "Enter"){
       this.login()

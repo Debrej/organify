@@ -1,20 +1,12 @@
 {
   "name": "organify",
   "version": "1.0.0",
-  "description": "Organify goal is to simplify the affectation of organizers to different tasks",
+  "description": "Organify's goal is to simplify the affectation of organizers to different tasks",
   "homepage": "https://github.com/Debrej/organify",
   "contributors": [
     {
       "name": "Vincent Devulder",
       "email": "vincent.devulder@insa-lyon.fr"
-    },
-    {
-      "name": "Gilles Thia-Song-Fat",
-      "email": "gilles.thia-song-fat@insa-lyon.fr"
-    },
-    {
-      "name": "Thibaut Bellanger",
-      "email": "thibaut.bellanger@insa-lyon.fr"
     }
   ],
   "main": "server.js",
