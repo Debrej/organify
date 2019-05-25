@@ -4,7 +4,7 @@
   flex-direction: column;
 
   width: 10vw;
-  background-color: #99987b;
+  background-color: #68645f;
   height:100%;
 }
 
@@ -42,9 +42,15 @@
   cursor: pointer;
 }
 
+.sidebar-button.focus{
+  background-color: rgba(0, 0, 0, 0.10);
+  border-left: #e9bd7a 5px solid;
+}
+
 .icon{
   height: 50%;
   margin-right: 2%;
+  fill: #bfb24a;
 }
 
 .button-holder{

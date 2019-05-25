@@ -12,9 +12,36 @@ export class SidebarComponent implements OnInit {
   @Input() menuIcon: any;
   @Input() searchBarContainer: any;
 
+  @ViewChild('dashboardButton') dashboardButton: ElementRef;
+  @ViewChild('tasksButton') tasksButton: ElementRef;
+  @ViewChild('shiftsButton') shiftsButton: ElementRef;
+  @ViewChild('affectButton') affectButton: ElementRef;
+  @ViewChild('settingsButton') settingsButton: ElementRef;
+
   constructor(private _renderer: Renderer2, private _router: Router) { }
 
   ngOnInit() {
+    switch(this._router.url.substr(1, this._router.url.length)){
+      case 'dashboard':
+        this.dashboardButton.nativeElement.className = 'sidebar-button focus';
+        break;
+
+      case 'tasks':
+        this.tasksButton.nativeElement.className = 'sidebar-button focus';
+        break;
+
+      case 'shifts':
+        this.shiftsButton.nativeElement.className = 'sidebar-button focus';
+        break;
+
+      case 'affectation':
+        this.affectButton.nativeElement.className = 'sidebar-button focus';
+        break;
+
+      case 'settings':
+        this.settingsButton.nativeElement.className = 'sidebar-button focus';
+        break;
+    }
   }
 
   closeSidebar() {
