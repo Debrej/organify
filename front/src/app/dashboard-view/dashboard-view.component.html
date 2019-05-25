@@ -1,21 +1,38 @@
-<div class="row search">
-  <div class="col-lg-10 searchIconContainer" #searchBar (click)="searchBarClick()">
-    <img src="assets/img/search.svg" class="searchIcon">
-    <input type="text" placeholder="Search">
-  </div>
-  <div class="col-lg-2 profile" (click)="toggleProfilePopUp()" id="profileDropdown">
-    <span class="userName">{{username}}</span>
-    <img src="assets/img/arrow.svg" class="arrowIcon">
-    <div class="profileImg">
-      <img src='{{profile_pic_url}}' class="profileImg">
+<ng-sidebar-container>
+  <ng-sidebar [(opened)]="_opened" mode="push" #sidebar>
+    <app-sidebar
+      [sidebar]="sidebar"
+      [menuIcon]="menuIcon"
+      [searchBarContainer]="searchBarContainer"
+    ></app-sidebar>
+  </ng-sidebar>
+  <div ng-sidebar-content>
+    <div class="row search">
+      <div class="menuIconContainer" (click)="openSidebar()" #menuIcon>
+        <img src="assets/img/menu.svg" class="menuIcon">
+      </div>
+      <div class="searchBarContainer" #searchBarContainer>
+        <div class="col-lg-10 searchIconContainer" #searchBar (click)="searchBarClick()">
+          <img src="assets/img/search.svg" class="searchIcon">
+          <input type="text" placeholder="Search">
+        </div>
+        <div class="col-lg-2 profile" (click)="toggleProfilePopUp()" id="profileDropdown">
+          <span class="userName">{{username}}</span>
+          <img src="assets/img/arrow.svg" class="arrowIcon">
+          <div class="profileImg">
+            <img src='{{profile_pic_url}}' class="profileImg">
+          </div>
+        </div>
+        <div class="profileMenu" #profileMenu style="display: none;">
+          <div (click)="logout()" class="profileMenuButton">Logout</div>
+        </div>
+      </div>
+    </div>
+    <div class="row main" (click)="mainClick()">
+      <p>
+        Your token is {{token}}
+      </p>
+      <button (click)="_toggleSidebar()">Toggle sidebar</button>
     </div>
   </div>
-  <div class="profileMenu" #profileMenu style="display: none;">
-    <div (click)="logout()" class="profileMenuButton">Logout</div>
-  </div>
-</div>
-<div class="row main" (click)="mainClick()">
-  <p>
-    Your token is {{token}}
-  </p>
-</div>
+</ng-sidebar-container>

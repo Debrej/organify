@@ -1,0 +1,57 @@
+.holder{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+
+  width: 10vw;
+  background-color: #99987b;
+  height:100%;
+}
+
+.title{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 6vh;
+  width: 100%;
+  padding-top: 0.5%;
+  padding-bottom: 0.5%;
+
+  font-size: 2em;
+  color: #ffffff;
+  font-family: 'Source Sans Pro', bold, sans-serif;
+
+  cursor: pointer;
+}
+
+.sidebar-button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 6vh;
+  width: 100%;
+  padding-top: 0.5%;
+  padding-bottom: 0.5%;
+
+  font-size: 1.3em;
+  color: #ffffff;
+  font-family: 'Source Sans Pro', bold, sans-serif;
+
+  cursor: pointer;
+}
+
+.icon{
+  height: 50%;
+  margin-right: 2%;
+}
+
+.button-holder{
+  height: 100%;
+  width: 80%;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

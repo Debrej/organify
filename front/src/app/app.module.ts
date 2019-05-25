@@ -4,6 +4,7 @@ import { CookieService } from 'angular2-cookie/services/cookies.service';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { MatMenuModule } from '@angular/material/menu';
 import { MatIconModule } from '@angular/material/icon';
+import { SidebarModule } from "ng-sidebar";
 
 import { AppComponent } from './app.component';
 import { FormLoginComponent } from './form-login/form-login.component';
@@ -17,12 +18,17 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FormSigninComponent } from './form-signin/form-signin.component';
 import { FormSigninViewComponent } from './form-signin-view/form-signin-view.component';
 import { DashboardViewComponent } from './dashboard-view/dashboard-view.component';
+import { SidebarComponent } from './sidebar/sidebar.component';
 
 const appRoutes: Routes = [
   { path: 'login', component: LoginViewComponent},
   { path: 'test', component: TestViewComponent},
   { path: 'signIn', component: FormSigninViewComponent},
   { path: 'dashboard', component: DashboardViewComponent},
+  { path: 'tasks', component: DashboardViewComponent},
+  { path: 'shifts', component: DashboardViewComponent},
+  { path: 'affectation', component: DashboardViewComponent},
+  { path: 'settings', component: DashboardViewComponent},
   { path: '', component: LoginViewComponent}
 ];
 
@@ -35,7 +41,8 @@ const appRoutes: Routes = [
     TestViewComponent,
     FormSigninComponent,
     FormSigninViewComponent,
-    DashboardViewComponent
+    DashboardViewComponent,
+    SidebarComponent
   ],
   imports: [
     BrowserModule,
@@ -44,7 +51,8 @@ const appRoutes: Routes = [
     RouterModule.forRoot(appRoutes),
     MatSnackBarModule,
     MatMenuModule,
-    MatIconModule
+    MatIconModule,
+    SidebarModule.forRoot()
   ],
   providers: [
     AuthService,

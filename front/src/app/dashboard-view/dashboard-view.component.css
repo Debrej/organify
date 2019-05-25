@@ -3,14 +3,15 @@ div.row{
 }
 
 div.row.search {
-  padding-top: 0.5%;
-  padding-bottom: 0.5%;
   height: 6vh;
   min-height: 50px;
   border-bottom: 1px solid #deddb5;
   box-shadow: 0 2px 8px 0 rgba(0, 0, 0, .2);
   z-index: 10;
+
+  display: flex;
 }
+
 div.row.main{
   background-color: #fffdf5;
   height:94vh;
@@ -100,4 +101,27 @@ div.profileMenuButton:hover{
   background-color: #525141;
   border: 1px solid #525141;
   color: white;
+}
+
+div.searchBarContainer{
+  min-width: 97%;
+  padding-top: 0.5%;
+  padding-bottom: 0.5%;
+}
+
+div.menuIconContainer{
+  height: 100%;
+  width: 3%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: #99987b;
+
+  cursor: pointer;
+}
+
+img.menuIcon{
+  height: 50%;
 }

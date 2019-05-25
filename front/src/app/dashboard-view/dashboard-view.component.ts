@@ -12,9 +12,12 @@ export class DashboardViewComponent implements OnInit {
   token: any;
   username: any;
   idOrga: any;
+  _opened: boolean = false;
 
   @ViewChild('profileMenu') profileMenu: ElementRef;
   @ViewChild('searchBar') searchBar: ElementRef;
+  @ViewChild('searchBarContainer') searchBarContainer: ElementRef;
+  @ViewChild('menuIcon') menuIcon: ElementRef;
   profile_pic_url: any;
 
   constructor(private _renderer: Renderer2, private _authService: AuthService, private _router: Router, private _orgaService: OrgaService) {
@@ -66,5 +69,15 @@ export class DashboardViewComponent implements OnInit {
 
   mainClick() {
     this.closeProfilePopUp();
+  }
+
+  _toggleSidebar() {
+    this._opened = !this._opened;
+  }
+
+  openSidebar() {
+    this._opened = true;
+    this._renderer.setStyle(this.menuIcon.nativeElement, 'display', 'none');
+    this._renderer.setStyle(this.searchBarContainer.nativeElement, 'width', '100%');
   }
 }
