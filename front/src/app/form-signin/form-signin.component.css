@@ -1,0 +1,109 @@
+div{
+  width: 100%;
+  align-content: center;
+  text-align: center;
+  margin-bottom: 5%;
+}
+
+div.flexHolder{
+  height: 100vh;
+  display: flex;
+  flex-direction: column; /* direction d'affichage verticale */
+  justify-content: center;
+  margin-bottom: 0;
+}
+
+div.holder{
+  margin-bottom: 0;
+}
+
+div.input{
+  align-content: center;
+  text-align: left;
+}
+
+div.password{
+  margin: 0 0 15%;
+  text-align: start;
+}
+
+span.title{
+  font-size: 3.2em;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+span.subtitle{
+  font-size: 1.5em;
+  font-family: "Lato Light", sans-serif;
+}
+
+span.rememberMe{
+  float: left;
+  cursor: pointer;
+}
+
+input.rememberMe{
+  float: left;
+}
+
+span.forgetPassword{
+  text-align: end;
+  float: right;
+  cursor: pointer
+}
+
+input[type=checkbox]{
+  margin: 0 5px 0 0;
+}
+
+input[type=text], input[type=password]{
+  border: none;
+  border-bottom: 1px solid #99987b;
+  background: none;
+  padding: 3% 2%;
+  margin-bottom: 5%;
+  width: 100%;
+  font-size: 1.2em;
+}
+
+div.flexButton{
+  display: flex;
+  justify-content: center;
+}
+
+.signInButton {
+  background-color: #29281f;
+  border: 1px solid #29281f;
+  color: white;
+  padding: 1vh 3vw;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.50em;
+  border-radius: 8px;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  margin-right: 5%;
+  margin-left: 5%;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.signInButton:hover {
+  background-color: #525141;
+  border: 1px solid #525141;
+}
+
+input.bothLineLeft{
+  width: 45%;
+  margin-right: 5%;
+}
+
+input.bothLineRight{
+  width:45%;
+  margin-left: 5%;
+}
+
+span.loginLink{
+  cursor: pointer;
+  text-decoration: underline;
+}

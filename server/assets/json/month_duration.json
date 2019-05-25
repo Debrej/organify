@@ -1,0 +1,16 @@
+{
+  "month": [
+    {"duration":  31, "name":  "jan"},
+    {"duration":  28, "name":  "feb"},
+    {"duration":  31, "name":  "mar"},
+    {"duration":  30, "name":  "apr"},
+    {"duration":  31, "name":  "may"},
+    {"duration":  30, "name":  "jun"},
+    {"duration":  31, "name":  "jul"},
+    {"duration":  31, "name":  "aug"},
+    {"duration":  30, "name":  "sep"},
+    {"duration":  31, "name":  "oct"},
+    {"duration":  30, "name":  "nov"},
+    {"duration":  31, "name":  "dec"}
+  ]
+}

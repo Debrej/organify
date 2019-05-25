@@ -1,0 +1,3 @@
+#!/bin/bash
+
+ng serve --ssl=true --ssl-key "../ssl/organify.key" --ssl-cert "../ssl/organify.crt"

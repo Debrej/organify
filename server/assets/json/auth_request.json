@@ -1,0 +1,13 @@
+{
+  "get_pwd_idorga": "SELECT pwd FROM PWD WHERE idOrga = %s;",
+  "get_orga_details": "SELECT * FROM ORGA WHERE idOrga = %d;",
+  "get_idorga_by_mail": "SELECT idOrga, first_name, last_name FROM ORGA WHERE LOWER(mail) = LOWER('%s');",
+  "check_user_already_exist": "SELECT idOrga FROM TOKEN WHERE idOrga = %s;",
+
+  "insert_pwd": "INSERT INTO PWD (idOrga, pwd) VALUES (%s, '%s');",
+  "insert_token": "INSERT INTO TOKEN (idOrga, token) VALUES (%s, '%s');",
+
+  "update_token": "UPDATE TOKEN SET token = '%s' WHERE idOrga = %s;",
+
+  "delete_token": "DELETE FROM TOKEN WHERE token = '%s';"
+}

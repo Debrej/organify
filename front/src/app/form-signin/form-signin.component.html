@@ -1,0 +1,21 @@
+<div class="flexHolder">
+  <div class="holder">
+    <div>
+      <span class="title">ORGANIFY</span><br>
+      <span class="subtitle">Welcome back, please login into your account</span>
+    </div>
+    <div class="input">
+      <input type="text" #firstNameInput placeholder="First Name" class="bothLineLeft">
+      <input type="text" #lastNameInput placeholder="Last Name" class="bothLineRight"><br>
+      <input type="text" #mailInput placeholder="Mail"><br>
+      <input type="password" #pwdInput placeholder="Password">
+      <input type="password" #pwdConfirmInput placeholder="Confirm Password">
+    </div>
+    <div class="flexButton">
+      <button class="signInButton" (click)="signIn()">Sign in</button>
+    </div>
+    <div>
+      <span class="loginLink" (click)="login()">Already has an account ? Log in</span>
+    </div>
+  </div>
+</div>

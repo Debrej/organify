@@ -1,0 +1,63 @@
+span.title{
+    font-size: 10em;
+    color: red;
+    font-family: 'Amatic SC', cursive;
+    position: relative;
+    top: 30vh;
+    transform: translateY(-50%);
+    max-width: 100%;
+}
+
+span.logo{
+    font-size: 3em;
+    color: red;
+    font-family: 'Amatic SC', cursive;
+    line-height: 7vh;
+}
+
+span.bouton{
+    font-size: 2em;
+    color: #565455;
+    font-family: 'Raleway', sans-serif;
+    line-height: 7vh;
+}
+
+div.bouton.bandeau{
+    height: 100%;
+}
+
+.row.bandeau{
+    height: 8vh;
+    border-bottom: red dashed 1px;
+}
+
+.col-lg-1.logo, .col-lg-1.bouton{
+    border-left: red dashed 1px;
+    text-align: center; vertical-align: middle;
+}
+
+.col-lg-1.logo:hover, .col-lg-1.bouton:hover{
+    background-color: #f8f8f8;
+}
+
+.row.body{
+    height: 92vh;
+}
+
+a.text{
+    height:100%;
+}
+
+a.text:hover, a.text:active{
+    text-decoration: none;
+}
+
+.col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12, .row{
+    margin: 0;
+    padding: 0;
+}
+
+.center{
+    height:100%;
+    margin: auto 0;
+}

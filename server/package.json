@@ -1,0 +1,51 @@
+{
+  "name": "organify",
+  "version": "1.0.0",
+  "description": "Organify goal is to simplify the affectation of organizers to different tasks",
+  "homepage": "https://github.com/Debrej/organify",
+  "contributors": [
+    {
+      "name": "Vincent Devulder",
+      "email": "vincent.devulder@insa-lyon.fr"
+    },
+    {
+      "name": "Gilles Thia-Song-Fat",
+      "email": "gilles.thia-song-fat@insa-lyon.fr"
+    },
+    {
+      "name": "Thibaut Bellanger",
+      "email": "thibaut.bellanger@insa-lyon.fr"
+    }
+  ],
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js | node auth.js",
+    "resource_server": "node server.js",
+    "auth_server": "node auth.js"
+  },
+  "author": "Thibaut BELLANGER",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt-nodejs": "0.0.3",
+    "body-parser": "^1.18.3",
+    "cors": "^2.8.5",
+    "date-format": "^2.0.0",
+    "debug": "^4.1.1",
+    "ejs": "^2.6.1",
+    "express": "^4.16.4",
+    "express-bearer-token": "^2.2.0",
+    "fs": "0.0.1-security",
+    "helmet": "^3.16.0",
+    "md5": "^2.2.1",
+    "mysql": "^2.16.0",
+    "node-gyp": "^3.8.0",
+    "node-pre-gyp": "^0.12.0",
+    "nodemon": "^1.19.0",
+    "npm": "^6.8.0",
+    "request": "^2.88.0",
+    "sprintf-js": "^1.1.2"
+  },
+  "config": {},
+  "devDependencies": {}
+}
