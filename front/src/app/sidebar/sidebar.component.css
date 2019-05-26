@@ -13,6 +13,8 @@
   justify-content: center;
   align-items: center;
 
+  background-color: rgba(0, 0, 0, 0.10);;
+
   height: 6vh;
   width: 100%;
   padding-top: 0.5%;
@@ -20,7 +22,7 @@
 
   font-size: 2em;
   color: #ffffff;
-  font-family: 'Source Sans Pro', bold, sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
 
   cursor: pointer;
 }
@@ -37,7 +39,7 @@
 
   font-size: 1.3em;
   color: #ffffff;
-  font-family: 'Source Sans Pro', bold, sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
 
   cursor: pointer;
 }
