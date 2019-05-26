@@ -1,0 +1,56 @@
+span.titleProfile{
+  font-size: 2em;
+  font-family: "Lato Light", sans-serif;
+  height: 15%;
+}
+
+div.containerProfile{
+  height: 85%;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+div.profilePic{
+  width: 100%;
+  height: 40%;
+
+  margin-top: 2%;
+  margin-bottom: 3%;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+img.profilePic{
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+span.name{
+  font-family: "Lato", sans-serif;
+  font-size: 1.8em;
+}
+
+div.infoHolder{
+  width: 100%;
+  height: 55%;
+
+  padding: 2%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+div.info{
+  width: 100%;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

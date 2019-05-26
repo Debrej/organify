@@ -4,6 +4,7 @@ import {LoginViewComponent} from "./login-view/login-view.component";
 import {TestViewComponent} from "./test-view/test-view.component";
 import {FormSigninViewComponent} from "./form-signin-view/form-signin-view.component";
 import {DashboardViewComponent} from "./dashboard-view/dashboard-view.component";
+import {DashboardComponent} from "./dashboard/dashboard.component";
 
 const routes: Routes = [
   { path: 'login', component: LoginViewComponent},
@@ -11,7 +12,7 @@ const routes: Routes = [
   { path: 'signIn', component: FormSigninViewComponent},
   { path: 'dashboard', component: DashboardViewComponent,
     children: [
-      { path: '', component: TestViewComponent}
+      { path: '', component: DashboardComponent}
     ]
   },
   { path: 'tasks', component: DashboardViewComponent,
@@ -34,7 +35,7 @@ const routes: Routes = [
       { path: '', component: TestViewComponent}
     ]
   },
-  { path: '', component: LoginViewComponent}
+  { path: '', redirectTo: '/login', pathMatch: 'full'}
 ];
 
 @NgModule({

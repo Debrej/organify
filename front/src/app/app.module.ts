@@ -20,6 +20,11 @@ import { FormSigninComponent } from './form-signin/form-signin.component';
 import { FormSigninViewComponent } from './form-signin-view/form-signin-view.component';
 import { DashboardViewComponent } from './dashboard-view/dashboard-view.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
+import { ProfileComponent } from './dashboard/profile/profile.component';
+import { TasksComponent } from './dashboard/tasks/tasks.component';
+import { TeamComponent } from './dashboard/team/team.component';
+import { LoadingComponent } from './loading/loading.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +36,12 @@ import { SidebarComponent } from './sidebar/sidebar.component';
     FormSigninComponent,
     FormSigninViewComponent,
     DashboardViewComponent,
-    SidebarComponent
+    SidebarComponent,
+    DashboardComponent,
+    ProfileComponent,
+    TasksComponent,
+    TeamComponent,
+    LoadingComponent
   ],
   imports: [
     BrowserModule,
