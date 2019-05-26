@@ -1,0 +1,62 @@
+span.titleTask{
+  padding-left: 5%;
+
+  font-size: 2em;
+  font-family: "Lato Light", sans-serif;
+  height: 15%;
+}
+
+div.containerTask{
+  height: 85%;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding: 2% 5%;
+}
+
+div.upper, div.footer{
+  width: 100%;
+  height:20%;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+div.desc{
+  width: 100%;
+  height: 60%;
+
+  padding-top: 2%;
+}
+
+span.at{
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 1.2em;
+  color: #bfb2a4;
+}
+
+span.taskName{
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 1.3em;
+
+  padding-left: 2%;
+  padding-right: 10%;
+  padding-bottom: 2%;
+
+  border-bottom: #99987b solid 1px;
+}
+
+span.time{
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 0.8em;
+  padding-bottom: 2%;
+}
+
+span.date{
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 0.8em;
+}
+

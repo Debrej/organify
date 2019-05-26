@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {OrgaService} from "../../orga.service";
+import {TaskService} from "../../task.service";
 
 @Component({
   selector: 'app-profile',

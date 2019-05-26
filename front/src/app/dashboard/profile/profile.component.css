@@ -1,4 +1,6 @@
 span.titleProfile{
+  padding-left: 5%;
+
   font-size: 2em;
   font-family: "Lato Light", sans-serif;
   height: 15%;
@@ -31,7 +33,7 @@ img.profilePic{
 }
 
 span.name{
-  font-family: "Lato", sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
   font-size: 1.8em;
 }
 
@@ -50,7 +52,15 @@ div.infoHolder{
 div.info{
   width: 100%;
 
+  font-size: 1.2em;
+
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+span.info{
+  font-family: "Lato Light", sans-serif;
 }

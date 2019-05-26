@@ -1,0 +1,15 @@
+span.titleTeam{
+  padding-left: 5%;
+
+  font-size: 2em;
+  font-family: "Lato Light", sans-serif;
+  height: 15%;
+}
+
+div.containerTeam{
+  height: 85%;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
