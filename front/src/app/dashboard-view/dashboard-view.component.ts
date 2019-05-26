@@ -12,7 +12,7 @@ export class DashboardViewComponent implements OnInit {
   token: any;
   username: any;
   idOrga: any;
-  _opened: boolean = false;
+  _opened: boolean = true;
 
   @ViewChild('profileMenu') profileMenu: ElementRef;
   @ViewChild('searchBar') searchBar: ElementRef;
@@ -35,6 +35,8 @@ export class DashboardViewComponent implements OnInit {
   }
 
   ngOnInit() {
+    this._renderer.setStyle(this.menuIcon.nativeElement, 'display', 'none');
+    this._renderer.setStyle(this.searchBarContainer.nativeElement, 'width', '100%');
   }
 
   toggleProfilePopUp() {
