@@ -58,11 +58,7 @@ import { LoadingComponent } from './loading/loading.component';
     CookieService
   ],
   bootstrap: [
-    AppComponent,
-    FormLoginComponent,
-    PhotoLoginComponent,
-    LoginViewComponent,
-    TestViewComponent
+    AppComponent
   ]
 })
 export class AppModule { }

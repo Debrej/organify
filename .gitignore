@@ -68,6 +68,11 @@ Organify.postman_collection.json
 server/assets/json/pwd.json
 server/assets/json/salt.json
 server/launch_organify
+server/organify
+server/password_hasher.js
 server/*.log
 .directory
+
+ssl/
+launch_organify
  
